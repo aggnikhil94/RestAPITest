@@ -52,6 +52,19 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/io.basc.framework/log4j2 -->
+        <dependency>
+            <groupId>io.basc.framework</groupId>
+            <artifactId>log4j2</artifactId>
+            <version>1.8.3</version>
+            <scope>test</scope>
+        </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.json/json -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20240303</version>
+        </dependency>
     </dependencies>
 </project>

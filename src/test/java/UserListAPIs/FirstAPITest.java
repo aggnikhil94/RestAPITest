@@ -8,13 +8,12 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class FirstAPITest extends UserLogin{
+public class FirstAPITest {
     @Test (dependsOnMethods = {"userLogin"})
     public void getSingleUser(){
         Response response = given().contentType(ContentType.JSON)
-                .headers("Authorisation", loginToken)
+                .headers("Authorisation", UserLogin.loginToken)
                 .when().get(Constants.baseURL + Constants.user_endpoint + "2");
         System.out.println(response.asString());
-
     }
 }
